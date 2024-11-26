@@ -10,6 +10,7 @@ pub struct InverseKinematicsPlugin;
 /// a chain of bones. The solver will attempt to match the global translation of
 /// of this entity to that of the target.
 #[derive(Component, Reflect)]
+#[reflect(Component)]
 pub struct IkConstraint {
     /// How many bones are included in the IK constraint.
     pub chain_length: usize,
